@@ -5,7 +5,7 @@ module.exports = {
     "prettier"
   ],
   parserOptions: {
-    project: './tsconfig.eslint.json'
+    project: ['./tsconfig.eslint.json', 'jest.config.ts']
   },
   rules: {
     "react/prop-types": "off",
