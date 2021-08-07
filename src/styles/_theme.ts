@@ -1,3 +1,5 @@
 export default () => ({
-  primary: 'red',
+  white: '#fff',
+  backgroundColor: '#f8f7f7',
+  gray: '#a39f99',
 });
