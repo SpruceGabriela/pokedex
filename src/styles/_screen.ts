@@ -1,4 +1,3 @@
-/* eslint-disable import/prefer-default-export */
 export const breakpoints = {
   max: {
     xs: 575.98,
