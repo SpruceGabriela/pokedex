@@ -15,8 +15,7 @@ export const breakpoints = {
   },
 };
 
-const mountMedia = (condition: 'max' | 'min', size: number) =>
-  `(${condition}-width: ${size / 16}em)`;
+const mountMedia = (condition: 'max' | 'min', size: number) => `(${condition}-width: ${size / 16}em)`;
 
 export const screen = {
   max: {

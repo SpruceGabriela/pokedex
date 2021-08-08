@@ -12,6 +12,7 @@ const Reset = createGlobalStyle`
     font-size: 16px;
   }
   * {
+    font-family: sans-serif;
     margin: 0;
     padding: 0;
     outline: 0;
