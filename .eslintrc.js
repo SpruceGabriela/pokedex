@@ -1,23 +1,13 @@
 module.exports = {
-  extends: ['airbnb-typescript', 'plugin:prettier/recommended'],
+  extends: ['airbnb-typescript'],
   plugins: [
-    "react",
-    "prettier"
+    "react"
   ],
   parserOptions: {
-    project: ['./tsconfig.eslint.json', 'jest.config.ts']
+    project: ['./tsconfig.eslint.json']
   },
   rules: {
     "react/prop-types": "off",
     "import/prefer-default-export": "off",
-    "prettier/prettier": [
-      "error",
-      {
-        "endOfLine": "auto"
-      },
-      {
-        "usePrettierrc": true
-      }
-    ]
   }
 };

@@ -9,4 +9,5 @@ export const Sidebar = styled.section`
   display: flex;
   flex-direction: column;
   background-color: ${({ theme }) => theme.white};
+  box-shadow: 10px 10px 60px #f4f4f4;
 `;
