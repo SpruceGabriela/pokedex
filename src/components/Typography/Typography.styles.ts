@@ -14,7 +14,7 @@ export const Container = styled.p<TypographyProps>`
       `;
     }
     return css`
-      color: ${({ theme }) => theme.gray};
+      color: ${({ theme }) => theme.black};
     `;
   }}
 `;

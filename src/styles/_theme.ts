@@ -5,6 +5,7 @@ export default () => ({
   backgroundColor: '#f8f7f7',
   gray: '#a39f99',
   shadowColor: '#f4f4f4',
+  black: '#565656',
 
   types: {
     [EPokemonType.NORMAL]: {
