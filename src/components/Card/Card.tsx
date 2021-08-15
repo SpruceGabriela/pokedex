@@ -1,19 +1,25 @@
 import React from 'react';
+import getCorrectDecimals from '../../utils/getCorrectDecimals';
 import Typography from '../Typography';
 
 import * as css from './Card.styles';
+import { CardProps } from './Card.types';
 
-const Card = () => (
+const Card = ({ id, name }: CardProps) => (
   <css.Card>
     <css.PokemonId>
-      #001
+      #
+      {getCorrectDecimals(id)}
     </css.PokemonId>
+    <div>
+      <img src={`https://assets.pokemon.com/assets/cms2/img/pokedex/full/${getCorrectDecimals(id)}.png`} alt={`pokemon-${id}`} />
+    </div>
     <Typography
       as="h2"
       size="20"
       weight="600"
     >
-      Nidoran
+      {name}
     </Typography>
     <Typography
       as="p"
