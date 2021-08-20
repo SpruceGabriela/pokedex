@@ -5,20 +5,20 @@ const ScrollBar = createGlobalStyle`
   @media ${screen.min.lg} {
     * {
       ::-webkit-scrollbar {
-        width: 6px;
+        width: 2px;
       }
       ::-webkit-scrollbar-track {
-        background: #E5E5E5;
+        background: transparent;
       }
       ::-webkit-scrollbar-thumb {
         border-radius: 6px;
-        background: #B9B9B9;
+        background: #ececec;
       }
       &:hover::-webkit-scrollbar-thumb {
-        background: #B9B9B9;
+        background: #e4e4e4;
       }
       ::-webkit-scrollbar-thumb:hover {
-        background: #959595;
+        background: #e4e4e4;
       }
     }
   }
