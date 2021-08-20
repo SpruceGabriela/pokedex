@@ -3,6 +3,8 @@ export interface Pokemons {
   name: string;
   types: PokemonType[];
   abilities: PokemonAbilities[];
+  species: PokemonSpecies;
+  genus: string;
 }
 
 export interface PokemonType {
@@ -19,4 +21,8 @@ export interface PokemonAbilities {
 
 export interface PokemonAbilityName {
   name: string;
+}
+
+export interface PokemonSpecies {
+  url: string;
 }

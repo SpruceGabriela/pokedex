@@ -6,6 +6,7 @@ export default () => ({
   gray: '#a39f99',
   shadowColor: '#f4f4f4',
   black: '#565656',
+  lightGray: '#e9e8e7',
 
   types: {
     [EPokemonType.NORMAL]: {
@@ -70,7 +71,7 @@ export default () => ({
     },
     [EPokemonType.FLYING]: {
       light: '#51C7EF',
-      dark: '#a27677c',
+      dark: '#9096f0',
     },
     [EPokemonType.DRAGON]: {
       light: '#38e1ea',

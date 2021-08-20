@@ -5,15 +5,17 @@ import Typography from '../Typography';
 import * as css from './Card.styles';
 import { CardProps } from './Card.types';
 
-const Card = ({ id, name }: CardProps) => (
+const Card = ({
+  id, name, types, abilities, genus,
+}: CardProps) => (
   <css.Card>
     <css.PokemonId>
       #
       {getCorrectDecimals(id)}
     </css.PokemonId>
-    <div>
+    <css.ImageContainer>
       <img src={`https://assets.pokemon.com/assets/cms2/img/pokedex/full/${getCorrectDecimals(id)}.png`} alt={`pokemon-${id}`} />
-    </div>
+    </css.ImageContainer>
     <Typography
       as="h2"
       size="20"
@@ -25,41 +27,34 @@ const Card = ({ id, name }: CardProps) => (
       as="p"
       size="14"
     >
-      Seed pokemon
+      {genus}
     </Typography>
     <css.CardFlag>
-      <Typography
-        as="p"
-        size="16"
-        weight="400"
-        color="grass"
-      >
-        Grass
-      </Typography>
-      <Typography
-        as="p"
-        size="16"
-        weight="400"
-        color="poison"
-      >
-        Poison
-      </Typography>
+      {types?.map((type, index) => (
+        <Typography
+          // eslint-disable-next-line react/no-array-index-key
+          key={index}
+          as="p"
+          size="16"
+          weight="400"
+          color={type.type.name}
+        >
+          {type.type.name}
+        </Typography>
+      ))}
     </css.CardFlag>
     <css.CardFlag>
-      <Typography
-        as="span"
-        size="16"
-        weight="400"
-      >
-        Overgrow
-      </Typography>
-      <Typography
-        as="span"
-        size="16"
-        weight="400"
-      >
-        Chlorophyll
-      </Typography>
+      {abilities?.map((ability, index) => (
+        <Typography
+          // eslint-disable-next-line react/no-array-index-key
+          key={index}
+          as="span"
+          size="16"
+          weight="400"
+        >
+          {ability.ability.name}
+        </Typography>
+      ))}
     </css.CardFlag>
   </css.Card>
 );

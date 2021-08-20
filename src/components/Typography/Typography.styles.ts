@@ -3,7 +3,8 @@ import { TypographyProps } from './Typography.types';
 
 export const Container = styled.p<TypographyProps>`
   margin: 0px;
-  
+  text-transform: capitalize;
+
   ${({ size }) => (size ? `font-size: ${size}px;` : '')}
   ${({ weight }) => (weight ? `font-weight: ${weight};` : '')}
 

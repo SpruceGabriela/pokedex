@@ -5,6 +5,7 @@ export const Card = styled.section`
   padding: 2rem;
   background-color: ${({ theme }) => theme.white};
   border-radius: 0.5rem;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -25,8 +26,8 @@ export const Card = styled.section`
 `;
 
 export const PokemonId = styled.h2`
-  font-size: 100px;
-  color: ${(props) => props.theme.gray};
+  font-size: 10rem;
+  color: ${(props) => props.theme.lightGray};
 `;
 
 export const CardFlag = styled.div`
@@ -55,5 +56,14 @@ export const CardFlag = styled.div`
 
   & > span:nth-child(2) {
     margin-left: 5px;
+  }
+`;
+
+export const ImageContainer = styled.div`
+  position: absolute;
+  top: 5rem;
+
+  & > img {
+    max-width: 8rem;
   }
 `;
