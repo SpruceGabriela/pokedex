@@ -2,7 +2,7 @@ export enum EPokemonType {
   NORMAL = 'normal',
   BUG = 'bug',
   POISON = 'poison',
-  ELETRIC = 'eletric',
+  ELETRIC = 'electric',
   FIRE = 'fire',
   WATER = 'water',
   FIGHTING = 'fighting',
@@ -16,4 +16,7 @@ export enum EPokemonType {
   FAIRY = 'fairy',
   DRAGON = 'dragon',
   FLYING = 'flying',
+  UNKNOW = 'unknown',
+  SHADOW = 'shadow',
+  DARK = 'dark',
 }

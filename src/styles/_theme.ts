@@ -77,5 +77,17 @@ export default () => ({
       light: '#38e1ea',
       dark: '#25989e',
     },
+    [EPokemonType.UNKNOW]: {
+      light: '#2e516d',
+      dark: '#172d3f',
+    },
+    [EPokemonType.SHADOW]: {
+      light: '#4e4e4e',
+      dark: '#313131',
+    },
+    [EPokemonType.DARK]: {
+      light: '#989898',
+      dark: '#707070',
+    },
   },
 });
