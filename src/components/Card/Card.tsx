@@ -6,9 +6,9 @@ import * as css from './Card.styles';
 import { CardProps } from './Card.types';
 
 const Card = ({
-  id, name, types, abilities, genus,
+  id, name, types, abilities, genus, onClick,
 }: CardProps) => (
-  <css.Card>
+  <css.Card onClick={onClick}>
     <css.PokemonId>
       #
       {getCorrectDecimals(id)}

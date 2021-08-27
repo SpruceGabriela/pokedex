@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 
-export const Card = styled.section`
+export const Card = styled.button`
   box-sizing: border-box;
   padding: 2rem;
   background-color: ${({ theme }) => theme.white};
+  border: none;
   border-radius: 0.5rem;
   position: relative;
   display: flex;

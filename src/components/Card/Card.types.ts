@@ -6,4 +6,5 @@ export interface CardProps {
   types?: PokemonType[];
   abilities?: PokemonAbilities[];
   genus?: string;
+  onClick?: () => void;
 }
