@@ -8,7 +8,12 @@ export const Container = styled.p<TypographyProps>`
   ${({ size }) => (size ? `font-size: ${size}px;` : '')}
   ${({ weight }) => (weight ? `font-weight: ${weight};` : '')}
 
-  ${({ color }) => {
+  ${({ color, isColored }) => {
+    if (!isColored) {
+      return css`
+        color: ${color};
+      `;
+    }
     if (color) {
       return css`
         color: ${({ theme }) => theme.types[color].dark};

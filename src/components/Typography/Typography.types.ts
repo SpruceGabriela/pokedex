@@ -6,4 +6,5 @@ export interface TypographyProps {
   weight?: string;
   color?: string;
   as?: keyof JSX.IntrinsicElements;
+  isColored?: boolean;
 }

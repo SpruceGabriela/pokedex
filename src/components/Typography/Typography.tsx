@@ -7,6 +7,7 @@ const Typography = ({
   as,
   color,
   size,
+  isColored,
   ...props
 }: TypographyProps) => (
   <css.Container
@@ -14,6 +15,7 @@ const Typography = ({
     size={size}
     as={as}
     weight={props.weight}
+    isColored={isColored}
   >
     {children}
   </css.Container>
